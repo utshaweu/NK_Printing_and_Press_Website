@@ -1,0 +1,460 @@
+/*======================================================================================================
+                                              Sub Navbar Part Start
+======================================================================================================= */
+#sub_navbar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sub_navbar_content{
+  a{
+    color: $dark_violet_col;
+    font-size: $common_font_size;
+    margin-right: 6px;
+    i{
+      padding-right: 8px;
+    }
+  }
+  .search_form{
+    .form-group{
+      margin-bottom: 0;
+      .form-control{
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-color: $dark_violet_col;
+        color: $dark_violet_col;
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      .btn{
+        width: 100%;
+        border-right: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: $white_col;
+        background: $dark_violet_col;
+        border-color: $dark_violet_col;
+      }
+    }
+  }
+  .content{
+    margin-top: 6px;
+  }
+  .mr1{
+    padding-top: 15px;
+  }
+}
+
+/*==============================================================================================
+                                             Navbar Part Start
+================================================================================================*/
+.navbar{
+  background: $dark_violet_col;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-light{
+  .navbar-nav{
+    .nav-link{
+      color: $white_col;
+      font-weight: 500;
+      text-transform: uppercase;
+      @include trans(.3s);
+      &:hover{
+        color: $white_col;
+      }
+      &:focus{
+        color: $white_col;
+      }
+      i{
+        margin-right: 8px;
+      }
+    }
+  }
+  .get_quote{
+    a{
+      color: $white_col;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: 1px solid $white_col;
+      padding: 7px 22px;
+      border-radius: 25px;
+      @include trans(.3s);
+      &:hover{
+        background: $white_col;
+        color: $dark_violet_col;
+      }
+    }
+  }
+}
+.navbar-expand-lg{
+  .navbar-nav{
+    .nav-link{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+/*=====================================================================================================
+                                             Banner Part Start
+====================================================================================================== */
+#banner{
+  position: relative;
+  i{
+    color: $dark_violet_col;
+    background: $white_col;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .left{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 99;
+    opacity: 0;
+    @include transformY(50%);
+    @include trans(.5s);
+  }
+  .right{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    z-index: 99;
+    opacity: 0;
+    @include transformY(50%);
+    @include trans(.5s);
+  }
+  &:hover .left, &:hover .right{
+    opacity: 1;
+  }
+}
+
+/*=====================================================================================================
+                                            Top Products Part Start
+=======================================================================================================*/
+#top_products{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.title{
+  margin-bottom: 70px;
+  h6{
+    color: $dark_violet_col;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      width: 120px;
+      height: 2px;
+      left: 50%;
+      bottom: -10px;
+      @include transformX(50%);
+      background: $dark_violet_col;
+    }
+    &:before{
+      position: absolute;
+      content: '';
+      width: 120px;
+      height: 2px;
+      left: 50%;
+      bottom: -13px;
+      @include transformX(50%);
+      background: $dark_violet_col;
+    }
+  }
+}
+.top_product_img{
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  &:hover::before{
+    opacity: 1;
+  }
+  &:hover .product_content_inner::before{
+    opacity: 1;
+    right: 0;
+  }
+  &:hover .product_content_inner::after{
+    opacity: 1;
+    left: 0;
+  }
+  &:hover .product_content_inner .banner_title a{
+    color: $white_col;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    @include trans(.35s);
+  }
+  .product_content_inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    @include trans(.35s);
+    &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.05) 50%, rgba(0, 106, 208, 0) 50%);
+    opacity: 0;
+    @include trans(.35s);
+    }
+    &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    background: linear-gradient(to bottom left, transparent 50%, rgba(82, 0, 198, 0.3) 50%);
+    opacity: 0;
+    @include trans(.35s);
+    }
+    .banner_title{
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      left: 20px;
+      @include trans(.35s);
+      a{
+        color: $dark_violet_col;
+        font-size: 18px;
+        font-weight: 600;
+        @include trans(.35s);
+      }
+    }
+  }
+}
+
+/*======================================================================================================
+                                              All Products Part Start
+=======================================================================================================*/
+#all_products{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(../images/all_products_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,.2);
+  }
+  .all_products_bg{
+    position: relative;
+    z-index: 999;
+  }
+  .view-btn{
+    text-align: center;
+    margin-top: 25px;
+    a{
+      color: $white_col;
+      background: $dark_violet_col;
+      padding: 10px 28px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+/*=====================================================================================================
+                                    All Company Logo Slider Part Start
+====================================================================================================== */
+#company_logos{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.company-logos{
+  text-align: center;
+  border: 1px solid $border_col;
+  height: 100px;
+  padding: 10px;
+  @include trans(.3s);
+  &:hover{
+    border: 1px solid $border_hover_col;
+  }
+}
+.key-arrows{
+  margin-top: 50px;
+  i{
+    color: $white_col;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    background: $dark_violet_col;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+/*======================================================================================================
+                                           Footer Part Start
+====================================================================================================== */
+#footer{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(../images/footer-bottom1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,.8);
+  }
+  .footer_bg{
+    position: relative;
+    z-index: 99;
+  }
+}
+.footer_content{
+  h6{
+    color: $dark_violet_col;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p{
+    color: $charcol_col;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 26px;
+    a{
+      color: $charcol_col;
+    }
+  }
+  i{
+    color: $dark_violet_col;
+    margin-top: 4px;
+  }
+  .footer_icon{
+    a{
+      margin-right: 8px;
+      i{
+        color: $white_col;
+        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+        background: $dark_violet_col;
+      }
+    }
+  }
+  ul{
+    margin-bottom: 0;
+    li{
+      margin-bottom: 6px;
+      a{
+        color: $charcol_col;
+        font-weight: 500;
+        @include trans(.3s);
+        &:hover{
+          color: $dark_violet_col;
+        }
+      }
+    }
+  }
+}
+
+/*====================================================================================================
+                                           Footer Bottom Part Start
+====================================================================================================== */
+#footer_bottom{
+  padding: 20px 0;
+  background: $dark_violet_col;
+}
+.footer_bottom_content{
+  h6{
+    color: $white_col;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+/*===================================================================================================
+                                          Common Banner Part Start
+====================================================================================================== */
+#cmn_banner{
+  padding: 30px 0;
+  background: url(../images/footer-bottom2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $white_bg_col;
+  }
+  .cmn_banner_bg{
+    position: relative;
+    z-index: 99;
+  }
+  .breadcrumb{
+    background: none;
+    justify-content: center;
+    .breadcrumb-item{
+      a{
+        color: $charcol_col;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      &:before{
+        color: $charcol_col;
+      }
+      &::before{
+      font-size: 22px;
+      font-weight: 700;
+      }
+    }.active{
+      color: $dark_violet_col;
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}

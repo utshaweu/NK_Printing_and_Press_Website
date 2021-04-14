@@ -1,0 +1,25 @@
+/*=====================================================================================================
+                                               Work Process Part Start
+====================================================================================================== */
+#work_process{
+  padding-bottom: 50px;
+}
+.work_process_content{
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid $border_col;
+  background: $alice_blue;
+  margin-bottom: 30px;
+  h6{
+    color: $dark_violet_col;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  p{
+    color: $charcol_col;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+}
