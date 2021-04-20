@@ -81,7 +81,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./pages/about-us.html">About Us</a>
@@ -91,12 +91,15 @@
               Products
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">Business Card Print</a>
-              <a class="dropdown-item" href="#">Letter Head Pad</a>
-              <a class="dropdown-item" href="#">Envelopes</a>
-              <a class="dropdown-item" href="#">Invoices</a>
-              <a class="dropdown-item" href="#">Calenders</a>
-              <a class="dropdown-item" href="#">Restaurant Menus</a>
+              <a class="dropdown-item" href="./pages/business-card.html">Business Card</a>
+              <a class="dropdown-item" href="./pages/letter-head-pad.html">Letter Head Pad</a>
+              <a class="dropdown-item" href="./pages/invoices.html">Invoices</a>
+              <a class="dropdown-item" href="./pages/calenders.html">Calenders</a>
+              <a class="dropdown-item" href="./pages/annual-report.html">Annual Report</a>
+              <a class="dropdown-item" href="./pages/envelopes.html">Envelopes</a>
+              <a class="dropdown-item" href="#">Postcards</a>
+              <a class="dropdown-item" href="#">Folders</a>
+              <a class="dropdown-item" href="#">Memo & Notepads</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -287,7 +290,7 @@
             <img src="./images/envelope.jpg" alt="image" class="w-100">
               <div class="product_content_inner">
                 <div class="banner_title">
-                  <a href="#">Envelope</a>
+                  <a href="#">Envelopes</a>
                 </div>
               </div>
           </div>
@@ -296,7 +299,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="view-btn">
-            <a href="#">View all products</a>
+            <a href="./pages/view-all-products.html">View all products</a>
           </div>
         </div>
       </div>
@@ -549,6 +552,46 @@
   </section>
   <!-- Footer Bottom Part End -->
 
+  <!-- Popup Modal Part Start -->
+  <div class="popup_modal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <h6>Don't Miss Out</h6>
+                <p>Get the lastest product updates, exciting promotions and exclusive discounts in your inbox.</p>
+                <form>
+                  <div class="form-group">
+                    <label for="inputEmail2">Email address: </label>
+                    <input type="email" class="form-control" id="inputEmail2" placeholder="">
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6">
+                <img src="./images/modal.png" alt="image" class="w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Popup Modal Part End -->
+
+  <!--Back to Top Part Start-->
+  <a href="#" class="back_to_top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!--Back to Top Part End-->
+
   <script src="./js/jquery-1.12.4.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
@@ -558,6 +601,11 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('#myModal').modal('show');
+    });
   </script>
 </body>
 </html>

@@ -447,6 +447,57 @@ body {
       font-weight: 700; }
 
 /*=====================================================================================================
+                                           Pop up Modal Part Start
+======================================================================================================*/
+.popup_modal .modal-content {
+  position: relative; }
+  .popup_modal .modal-content button:focus {
+    outline: 0; }
+  .popup_modal .modal-content button span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background: #5200C6;
+    text-align: center;
+    font-weight: 400; }
+  .popup_modal .modal-content .modal-body h6 {
+    color: #5200C6;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 12px; }
+  .popup_modal .modal-content .modal-body p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 26px; }
+
+/* ===============================================================================================
+                                           Back to Top Part Css
+=================================================================================================== */
+.back_to_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999;
+  display: none; }
+  .back_to_top i {
+    color: #fff;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #A95216;
+    border-radius: 50%; }
+
+/*=====================================================================================================
                                             Get Quote Part Start
 ====================================================================================================== */
 #get_qoute {
@@ -848,5 +899,147 @@ body {
       font-weight: 400;
       line-height: 26px;
       text-align: justify; }
+
+/*======================================================================================================
+                                   View All Products Part Start
+======================================================================================================*/
+#view_all_products {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #view_all_products p {
+    color: #A95216;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: justify;
+    padding-bottom: 20px; }
+  #view_all_products .pagination {
+    justify-content: center;
+    margin-top: 10px; }
+    #view_all_products .pagination .page-item .page-link {
+      font-size: 18px;
+      font-weight: 600;
+      color: #5200C6;
+      padding: 12px 20px;
+      border: 1px solid rgba(82, 0, 198, 0.2); }
+    #view_all_products .pagination .page-item.active .page-link {
+      color: #fff;
+      background: #5200C6; }
+
+.all_categories {
+  padding: 20px;
+  background: #f1f8ff;
+  border-radius: 5px;
+  margin-bottom: 30px; }
+  .all_categories h6 {
+    color: #5200C6;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
+  .all_categories ul {
+    margin-bottom: 0; }
+    .all_categories ul li {
+      margin-bottom: 6px; }
+      .all_categories ul li a {
+        color: #454545;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s; }
+        .all_categories ul li a:hover {
+          color: #5200C6;
+          text-decoration: underline; }
+        .all_categories ul li a i {
+          font-size: 10px;
+          margin-right: 8px;
+          color: #A95216; }
+  .all_categories span {
+    font-size: 16px; }
+    .all_categories span a {
+      color: #454545;
+      font-weight: 400;
+      line-height: 0;
+      transition: all linear 0.3s;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s; }
+      .all_categories span a:hover {
+        color: #5200C6;
+        text-decoration: underline; }
+
+/*=====================================================================================================
+                                              Products Part Start
+======================================================================================================*/
+#products {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.products_details {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(82, 0, 198, 0.2);
+  background: url(../images/services.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; }
+  .products_details:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: -1; }
+  .products_details h6 {
+    color: #5200C6;
+    font-weight: 700;
+    font-size: 20px; }
+  .products_details p {
+    color: #454545;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify; }
+  .products_details .form-group label {
+    color: #5200C6;
+    font-weight: 700;
+    font-size: 16px; }
+  .products_details .form-group .form-check label {
+    color: #454545;
+    font-weight: 400; }
+  .products_details .form-group span {
+    color: #A95216;
+    font-size: 12px;
+    font-weight: 600; }
+  .products_details .form-control {
+    border-color: rgba(82, 0, 198, 0.2); }
+    .products_details .form-control:focus {
+      box-shadow: none; }
+  .products_details .mrr1 {
+    height: calc(1.25rem + 2px); }
+  .products_details .products-btn {
+    text-align: center; }
+    .products_details .products-btn .btn {
+      background: #5200C6;
+      padding: 12px 25px;
+      font-weight: 500;
+      border-radius: 30px;
+      border-color: #5200C6; }
+    .products_details .products-btn span {
+      color: #454545;
+      font-weight: 500;
+      margin-left: 10px;
+      margin-right: 10px; }
+    .products_details .products-btn a {
+      background: #A95216;
+      padding: 12px 25px;
+      font-weight: 500;
+      border-radius: 30px;
+      border-color: #A95216;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

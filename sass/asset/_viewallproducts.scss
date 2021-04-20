@@ -1,0 +1,78 @@
+/*======================================================================================================
+                                   View All Products Part Start
+======================================================================================================*/
+#view_all_products{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  p{
+    color: $brown_col;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  .pagination{
+    justify-content: center;
+    margin-top: 10px;
+    .page-item{
+      .page-link{
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark_violet_col;
+        padding: 12px 20px;
+        border: 1px solid $border_col;
+      }
+      &.active .page-link{
+        color: $white_col;
+        background: $dark_violet_col;
+      }
+    }
+  }
+}
+.all_categories{
+  padding: 20px;
+  background: $alice_blue;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  h6{
+    color: $dark_violet_col;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+  ul{
+    margin-bottom: 0;
+    li{
+      margin-bottom: 6px;
+      a{
+        color: $charcol_col;
+        font-size: 16px;
+        font-weight: 400;
+        @include trans(.3s);
+        &:hover{
+          color: $dark_violet_col;
+          text-decoration: underline;
+        }
+        i{
+          font-size: 10px;
+          margin-right: 8px;
+          color: $brown_col;
+        }
+      }
+    }
+  }
+  span{
+    font-size: 16px;
+    a{
+      color: $charcol_col;
+      font-weight: 400;
+      line-height: 0;
+      @include trans(.3s);
+      &:hover{
+        color: $dark_violet_col;
+        text-decoration: underline;
+      }
+    }
+  }
+}
