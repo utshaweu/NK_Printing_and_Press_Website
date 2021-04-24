@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
   <!-- Sub Navbar Part Start -->
@@ -39,28 +40,29 @@
               </div>
               <div class="col-lg-12 mr1">
                 <div class="row">
-                  <div class="col-lg-8">
+                  <div class="col-lg-8 col-md-7 col-12">
                     <div class="search_form">
                       <form>
                         <div class="form-row">
-                          <div class="form-group col-md-10 pr-0">
+                          <div class="form-group col-md-10 col-10 pr-0">
                             <input type="text" class="form-control" id="inputText" placeholder="Search Products...">
                           </div>
-                          <div class="form-group col-md-2 pl-0">
+                          <div class="form-group col-md-2 col-2 pl-0">
                             <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
-                  <div class="col-lg-4 pl-0">
+                  <div class="col-lg-4 col-md-5 pl-0">
                     <div class="content">
                       <a href="../pages/customer-login.html"><i class="fas fa-sign-in-alt"></i>Customer Login</a>
-                      <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+                      <a href="../pages/cart.html"><i class="fas fa-shopping-cart"></i>Cart <span>0</span></a>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -73,7 +75,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -95,9 +97,9 @@
               <a class="dropdown-item" href="../pages/calenders.html">Calenders</a>
               <a class="dropdown-item" href="../pages/annual-report.html">Annual Report</a>
               <a class="dropdown-item" href="../pages/envelopes.html">Envelopes</a>
-              <a class="dropdown-item" href="#">Postcards</a>
-              <a class="dropdown-item" href="#">Folders</a>
-              <a class="dropdown-item" href="#">Memo & Notepads</a>
+              <a class="dropdown-item" href="../pages/postcards.html">Postcards</a>
+              <a class="dropdown-item" href="../pages/folders.html">Folders</a>
+              <a class="dropdown-item" href="../pages/memo-and-notepads.html">Memo & Notepads</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -161,12 +163,12 @@
         <div class="col-lg-9">
           <div class="products_details">
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-8 col-md-7">
                 <h6>Envelopes</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur hic soluta ullam rerum libero temporibus, quasi aliquam maiores, at commodi sunt, eos rem animi omnis magnam mollitia veritatis recusandae suscipit. Iusto, quod nihil deleniti nam quam cum expedita neque?</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis in quia laboriosam architecto praesentium porro.</p>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-5">
                 <img src="../images/envelope.jpg" alt="image" class="w-100">
               </div>
             </div>
@@ -387,60 +389,67 @@
         </div>
 
         <div class="col-lg-3">
-          <div class="all_categories">
-            <h6>Product Categories</h6>
-            <ul>
-              <li><a href="#"><i class="fas fa-circle"></i>Business Card</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Letter Head Pad</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Invoices</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Calender</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Annual Report</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Envelopes</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Postcards</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Folders</a></li>
-              <li><a href="#"><i class="fas fa-circle"></i>Memo & Notepads</a></li>
-            </ul>
-          </div>
-          <div class="all_categories">
-            <h6>Top Products</h6>
-            <div class="row">
-              <div class="col-lg-5">
-                <img src="../images/p-4.jpg" alt="image" class="w-100">
+          <div class="row">
+            <div class="col-lg-12 col-md-6">
+              <div class="all_categories">
+                <h6>Product Categories</h6>
+                <ul>
+                  <li><a href="#"><i class="fas fa-circle"></i>Business Card</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Letter Head Pad</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Invoices</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Calender</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Annual Report</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Envelopes</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Postcards</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Folders</a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i>Memo & Notepads</a></li>
+                </ul>
               </div>
-              <div class="col-lg-7">
-                <span><a href="#">Brochure</a></span>
-              </div>
-              <div class="col-lg-12">
-                <hr>
-              </div>
-              <div class="col-lg-5">
-                <img src="../images/p-5.jpg" alt="image" class="w-100">
-              </div>
-              <div class="col-lg-7">
-                <span><a href="#">Presentation Folder</a></span>
-              </div>
-              <div class="col-lg-12">
-                <hr>
-              </div>
-              <div class="col-lg-5">
-                <img src="../images/p-3.jpg" alt="image" class="w-100">
-              </div>
-              <div class="col-lg-7">
-                <span><a href="#">Stationary</a></span>
+            </div>
+            <div class="col-lg-12 col-md-6">
+              <div class="all_categories">
+                <h6>Top Products</h6>
+                <div class="row">
+                  <div class="col-lg-5 col-5">
+                    <img src="../images/p-4.jpg" alt="image" class="w-100">
+                  </div>
+                  <div class="col-lg-7 col-7">
+                    <span><a href="#">Brochure</a></span>
+                  </div>
+                  <div class="col-lg-12">
+                    <hr>
+                  </div>
+                  <div class="col-lg-5 col-5">
+                    <img src="../images/p-5.jpg" alt="image" class="w-100">
+                  </div>
+                  <div class="col-lg-7 col-7">
+                    <span><a href="#">Presentation Folder</a></span>
+                  </div>
+                  <div class="col-lg-12">
+                    <hr>
+                  </div>
+                  <div class="col-lg-5 col-5">
+                    <img src="../images/p-3.jpg" alt="image" class="w-100">
+                  </div>
+                  <div class="col-lg-7 col-7">
+                    <span><a href="#">Stationary</a></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
   <!-- Products Part End -->
 
    <!-- Footer Part Start -->
-   <section id="footer">
+  <section id="footer">
     <div class="container footer_bg">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-8">
           <div class="footer_content">
             <h6>About NKPP</h6>
             <p>NK Printing and Press provies all kinds of 
@@ -456,7 +465,7 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="footer_content">
             <h6>Company</h6>
             <ul>
@@ -482,62 +491,63 @@
             </ul>
           </div>
         </div> -->
-        <div class="col-lg-3 pl-0">
-          <div class="footer_content">
+        <div class="col-lg-3 col-sm-6 pl-0">
+          <div class="footer_content mrr3">
             <h6>International Office</h6>
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
-              <div class="col-lg-10 pl-0 pr-0">
+              <div class="col-lg-10 col-10 pl-0 pr-0">
                 <p class="text-left">1318 Kossuth Street Bridgeport,
                   CT-06608, USA
                 </p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-phone-alt"></i>
               </div>
-              <div class="col-lg-10 pl-0">
+              <div class="col-lg-10 col-10 pl-0">
                 <p style="margin-bottom: 0;"><a href="#">+1 203 231 5300 (Direct)</a></p>
                 <p><a href="#">+1 203 803 4430 (Work)</a></p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-envelope"></i>
               </div>
-              <div class="col-lg-10 pl-0">
+              <div class="col-lg-10 col-10 pl-0">
                 <p><a href="#">info@nkprintingandpress.com</a></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="footer_content">
             <h6>Bangladesh Office</h6>
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
-              <div class="col-lg-10 pl-0">
+              <div class="col-lg-10 col-10 pl-0">
                 <p>House - 951, Road - 14
                   Avenue - 02, Mirpur DOHS
                   Mirpur - 12, Dhaka - 1216
                 </p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-phone-alt"></i>
               </div>
-              <div class="col-lg-10 pl-0">
+              <div class="col-lg-10 col-10 pl-0">
                 <p><a href="#">+880 1824 570 690</a></p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-2">
                 <i class="fas fa-envelope"></i>
               </div>
-              <div class="col-lg-10 pl-0">
+              <div class="col-lg-10 col-10 pl-0">
                 <p><a href="#">info@nkprintingandpress.com</a></p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
