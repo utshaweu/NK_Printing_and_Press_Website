@@ -24,6 +24,20 @@
     background: rgba(255, 255, 255,.85);
     z-index: -1;
   }
+  h6{
+    color: $brown_col;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid $border_col;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  p{
+    color: $charcol_col;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+  }
   .nav-pills{
     .nav-link{
       color: $dark_violet_col;

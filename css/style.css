@@ -871,11 +871,22 @@ body {
   font-weight: 700;
   margin-bottom: 15px;
   text-align: center;
+  line-height: 30px;
 }
 
 .about_content p {
   color: #454545;
   font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.about_content ul {
+  list-style-type: disc;
+  margin-left: 35px;
+}
+
+.about_content ul li {
   line-height: 26px;
   text-align: justify;
 }
@@ -1119,7 +1130,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(82, 0, 198, 0.2);
   background: #f1f8ff;
-  margin-bottom: 30px;
+  height: 100%;
 }
 
 .work_process_content h6 {
@@ -1134,6 +1145,10 @@ body {
   line-height: 26px;
   margin-bottom: 0;
   text-align: justify;
+}
+
+.mb1 {
+  margin-bottom: 30px;
 }
 
 /*===================================================================================================
@@ -1164,6 +1179,22 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.85);
   z-index: -1;
+}
+
+.services_item h6 {
+  color: #A95216;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(82, 0, 198, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.services_item p {
+  color: #454545;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
 }
 
 .services_item .nav-pills .nav-link {
